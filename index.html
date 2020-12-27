@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./images/favicon.ico" type="image" />
-    <title>Meet Vikas</title>
+    <title>Vikas Kumar</title>
   </head>
   <body>
     <div id="welcome">
-      <a href="#">
-        <h1>Vikas Kumar</h1>
-      </a>
-      <h2>Frontend Web Developer</h2>
+      <h1>Vikas&nbsp;Kumar</h1>
+      <h2>FullStack Web Developer</h2>
       <p>I Like to Code, Coffee and Music, not necessarily in that order.</p>
     </div>
     <div id="meet-me">
@@ -22,8 +20,9 @@
       <div id="description">
         <h2>Meet Me</h2>
         <p>
-          Hi, I am Vikas, Frontend Developer. I love to make layouts and
-          creative apps. Recently completed my graduation and looking for a job.
+          Hi, I am Vikas, Fullstack Web Developer. Right now i am working at
+          Thumbstack technologies, Mumbai, India. Apart from coding i like to
+          read and always thinking about jokes.
         </p>
       </div>
     </div>
@@ -47,22 +46,36 @@
                   Responsive Web Design
                 </a>
               </li>
-              <li><a href="https://www.freecodecamp.org/certification/svikas641/javascript-algorithms-and-data-structures"> Javascript Algo and Data Structure </a></li>
+              <li>
+                <a
+                  href="https://www.freecodecamp.org/certification/svikas641/javascript-algorithms-and-data-structures"
+                >
+                  Javascript Algo and Data Structure
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div id="skills">
           <h3>Skills</h3>
-          <div class="chips">
-            <span class="chip">HTML5</span>
-            <span class="chip">CSS3</span>
-            <span class="chip">Javascript - ES6</span>
-            <span class="chip">React</span>
-            <span class="chip">Redux</span>
-            <span class="chip">Git</span>
-            <span class="chip">NPM</span>
-            <span class="chip">CSS Frameworks</span>
-          </div>
+          <table>
+            <tr>
+              <td>HTML5</td>
+              <td>CSS3</td>
+            </tr>
+            <tr>
+              <td>Javascript - ES6</td>
+              <td>React</td>
+            </tr>
+            <tr>
+              <td>Node</td>
+              <td>MongoDb</td>
+            </tr>
+            <tr>
+              <td>Redux</td>
+              <td>Git</td>
+            </tr>
+          </table>
           <a href="./resume/Vikas-resume.pdf" class="button" id="resume"
             >Download Resume</a
           >
@@ -175,5 +188,13 @@
         </div>
       </div>
     </div>
+    <script>
+      const sparanWrap = (word) => {
+        return [...word].map((letter) => `<span>${letter}</span>`).join('');
+      };
+      const heading = document.querySelector('#welcome h1');
+      console.log(heading.textContent);
+      heading.innerHTML = sparanWrap(heading.textContent);
+    </script>
   </body>
 </html>

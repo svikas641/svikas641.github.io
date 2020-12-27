@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "FrenchFries";
-  src: url("./font/frenchfries.woff");
+  font-family: 'FrenchFries';
+  src: url('./font/frenchfries.woff');
 }
 html {
   --pink: #d60087;
@@ -9,7 +9,7 @@ html {
   --red: #c73737;
   --text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@ a {
 
 a.button,
 button,
-input[type="button"] {
+input[type='button'] {
   color: white;
   background: var(--pink);
   padding: 1rem;
@@ -74,10 +74,20 @@ h2 {
 #welcome h1 {
   color: var(--black);
   text-shadow: none;
-  font-family: "Frenchfries", cursive;
+  font-family: 'Frenchfries', cursive;
   font-size: 100px;
   padding-top: 5rem;
-  transform: rotate(-2deg);
+}
+
+#welcome h1 span {
+  display: inline-block;
+  transition: transform 0.2s;
+  cursor: url('/santahand.fbeeee9f.png'), default;
+}
+
+#welcome span:hover {
+  color: #fff;
+  transform: translateY(-20px) rotate(10deg) scale(2);
 }
 
 #welcome p {
@@ -162,6 +172,14 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+table {
+  padding: 20px;
+}
+
+td {
+  list-style: armenian;
 }
 
 #resume {
