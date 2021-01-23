@@ -2,6 +2,12 @@
   font-family: 'FrenchFries';
   src: url('./font/frenchfries.woff');
 }
+
+@font-face {
+  font-family: 'Operator Wolf';
+  src: url('./font/OperatorMono-Book_Web-7cb5137bccfa29a21aae801dac44d704.woff2');
+}
+
 html {
   --pink: #d60087;
   --yellow: #ffc600;
@@ -9,7 +15,7 @@ html {
   --red: #c73737;
   --text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Operator Wolf', 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
 }
 
@@ -96,8 +102,9 @@ h2 {
 
 #meet-me {
   width: 100%;
-  background-color: #f654ae;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%239C92AC' fill-opacity='0.25' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #e56fba;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23f6eff4' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 50px;
   display: flex;
 }
 
@@ -189,9 +196,9 @@ td {
 }
 
 #projects {
-  background: #f654ae;
-  background-image: url(./images/pattern.svg);
-  background-size: 500px;
+  background-color: #e56fba;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23f6eff4' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 50px;
 }
 
 #projects h1 {
@@ -237,6 +244,7 @@ img {
   padding: 0.2rem 1rem;
   border-radius: 5px;
   margin-right: 5px;
+  font-weight: 600;
 }
 
 .code {
@@ -245,6 +253,7 @@ img {
   font-size: 14px;
   padding: 0.2rem 1rem;
   border-radius: 5px;
+  font-weight: 600;
   margin-right: 5px;
 }
 
